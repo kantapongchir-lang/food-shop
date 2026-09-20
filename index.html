@@ -17,7 +17,8 @@
     <header class="bg-[#3d1414] text-white shadow-md sticky top-0 z-50">
         <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center overflow-hidden border border-amber-300">
+                <div class="w-10 h-10 bg-amber-100 rounded-full flex items-center justify-center overflow-hidden border border-amber-300 shadow-sm">
+                    <!-- โลโก้ร้านใน Navbar: logo.png -->
                     <img id="logo-img"
                          src="./assets/images/logo.png" 
                          alt="โลโก้ร้าน" 
@@ -29,6 +30,7 @@
                     <p class="text-amber-200 text-xs">Delicious Food</p>
                 </div>
             </div>
+            <!-- เมนู Anchor Links นำทางไปยังแต่ละส่วน -->
             <nav class="flex gap-6 text-sm font-medium">
                 <a href="#featured-menu" class="text-amber-400 hover:text-amber-300 pb-1 transition">เมนูแนะนำ</a>
                 <a href="#additional-menu" class="text-gray-300 hover:text-white transition">เมนูเพิ่มเติม</a>
@@ -42,11 +44,13 @@
 
         <!-- Hero Section -->
         <section class="relative py-12 px-6 border-b border-amber-100 overflow-hidden">
-            <img src="assets/images/banner.jpg" 
-                 alt="แบนเนอร์ร้าน" 
+            <!-- ภาพพื้นหลังแบนเนอร์ร้าน: banner.jpg -->
+            <img src="./assets/images/banner.jpg" 
+                 alt="แบนเนอร์ร้านอาหาร" 
                  onerror="this.style.display='none';"
                  class="absolute inset-0 w-full h-full object-cover">
             
+            <!-- เลเยอร์สีโปร่งแสงสำหรับทำให้อ่านตัวหนังสือง่ายขึ้น -->
             <div class="absolute inset-0 bg-[#fcf2f2]/85"></div>
 
             <div class="relative max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8 z-10">
@@ -62,8 +66,8 @@
                     </a>
                 </div>
                 <div class="flex gap-4">
-                    <img src="./assets/images/ChickenKhaoSoi.png" alt="ข้าวซอยไก่" onerror="this.src='https://via.placeholder.com/128x176?text=ChickenKhaoSoi';" class="w-32 h-44 object-cover rounded-2xl shadow-lg">
-                    <img src="./assets/images/PadKraPaoMooGrob.png" alt="กะเพราหมูกรอบ" onerror="this.src='https://via.placeholder.com/128x176?text=PadKraPao';" class="w-32 h-44 object-cover rounded-2xl shadow-lg">
+                    <img src="./assets/images/ChickenKhaoSoi.png" alt="ข้าวซอยไก่" onerror="this.src='https://via.placeholder.com/128x176?text=ChickenKhaoSoi';" class="w-32 h-44 object-cover rounded-2xl shadow-lg border border-white">
+                    <img src="./assets/images/PadKraPaoMooGrob.png" alt="กะเพราหมูกรอบ" onerror="this.src='https://via.placeholder.com/128x176?text=PadKraPao';" class="w-32 h-44 object-cover rounded-2xl shadow-lg border border-white">
                 </div>
             </div>
         </section>
@@ -78,8 +82,8 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <!-- Card 1: ผัดไทยกุ้งสด -->
-                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4">
-                        <img src="./assets/images/PadThai.png" alt="ผัดไทยกุ้งสด" onerror="this.src='https://via.placeholder.com/96x112?text=Pad+Thai';" class="w-24 h-28 object-cover rounded-xl flex-shrink-0">
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4 hover:shadow-md transition">
+                        <img src="./assets/images/PadThai.png" alt="ผัดไทยกุ้งสด" onerror="this.src='https://via.placeholder.com/96x112?text=PadThai';" class="w-24 h-28 object-cover rounded-xl flex-shrink-0">
                         <div class="flex-grow space-y-1">
                             <h3 class="font-bold text-gray-800">ผัดไทยกุ้งสด</h3>
                             <p class="text-xs text-gray-500">เส้นเหนียวนุ่ม เครื่องแน่นๆ</p>
@@ -91,8 +95,8 @@
                     </div>
 
                     <!-- Card 2: ต้มยำกุ้งน้ำข้น -->
-                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4">
-                        <img src="./assets/images/TomYumGoong.png" alt="ต้มยำกุ้งน้ำข้น" onerror="this.src='https://via.placeholder.com/96x112?text=Tom+Yum';" class="w-24 h-28 object-cover rounded-xl flex-shrink-0">
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4 hover:shadow-md transition">
+                        <img src="./assets/images/TomYumGoong.png" alt="ต้มยำกุ้งน้ำข้น" onerror="this.src='https://via.placeholder.com/96x112?text=TomYumGoong';" class="w-24 h-28 object-cover rounded-xl flex-shrink-0">
                         <div class="flex-grow space-y-1">
                             <h3 class="font-bold text-gray-800">ต้มยำกุ้งน้ำข้น</h3>
                             <p class="text-xs text-gray-500">แซ่บถึงใจ เครื่องเทศเข้มข้น</p>
@@ -114,7 +118,7 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <!-- Card 3: ส้มตำไทยปูม้า -->
-                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4">
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4 hover:shadow-md transition">
                         <img src="./assets/images/PapayaSalad.png" alt="ส้มตำไทยปูม้า" onerror="this.src='https://via.placeholder.com/96x112?text=PapayaSalad';" class="w-24 h-28 object-cover rounded-xl flex-shrink-0">
                         <div class="flex-grow space-y-1">
                             <h3 class="font-bold text-gray-800">ส้มตำไทยปูม้า</h3>
@@ -127,7 +131,7 @@
                     </div>
 
                     <!-- Card 4: คอหมูย่าง -->
-                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4">
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4 hover:shadow-md transition">
                         <img src="./assets/images/ThaiGrilledPork.png" alt="คอหมูย่าง" onerror="this.src='https://via.placeholder.com/96x112?text=ThaiGrilledPork';" class="w-24 h-28 object-cover rounded-xl flex-shrink-0">
                         <div class="flex-grow space-y-1">
                             <h3 class="font-bold text-gray-800">คอหมูย่าง</h3>
@@ -140,7 +144,7 @@
                     </div>
 
                     <!-- Card 5: แกงเขียวหวานไก่ -->
-                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4">
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4 hover:shadow-md transition">
                         <img src="./assets/images/GreenCurry.png" alt="แกงเขียวหวานไก่" onerror="this.src='https://via.placeholder.com/96x112?text=GreenCurry';" class="w-24 h-28 object-cover rounded-xl flex-shrink-0">
                         <div class="flex-grow space-y-1">
                             <h3 class="font-bold text-gray-800">แกงเขียวหวานไก่</h3>
@@ -153,7 +157,7 @@
                     </div>
 
                     <!-- Card 6: มัสมั่นไก่ -->
-                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4">
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4 hover:shadow-md transition">
                         <img src="./assets/images/MassamanCurry.png" alt="มัสมั่นไก่" onerror="this.src='https://via.placeholder.com/96x112?text=MassamanCurry';" class="w-24 h-28 object-cover rounded-xl flex-shrink-0">
                         <div class="flex-grow space-y-1">
                             <h3 class="font-bold text-gray-800">มัสมั่นไก่</h3>
@@ -166,7 +170,7 @@
                     </div>
 
                     <!-- Card 7: โรตีแกงเขียวหวาน -->
-                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4">
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4 hover:shadow-md transition">
                         <img src="./assets/images/RotiGreenCurry.png" alt="โรตีแกงเขียวหวาน" onerror="this.src='https://via.placeholder.com/96x112?text=RotiGreenCurry';" class="w-24 h-28 object-cover rounded-xl flex-shrink-0">
                         <div class="flex-grow space-y-1">
                             <h3 class="font-bold text-gray-800">โรตีแกงเขียวหวาน</h3>
@@ -179,7 +183,7 @@
                     </div>
 
                     <!-- Card 8: ไข่เจียวฟูกรอบ -->
-                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4">
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4 hover:shadow-md transition">
                         <img src="./assets/images/ThaiOmelet.png" alt="ไข่เจียวฟูกรอบ" onerror="this.src='https://via.placeholder.com/96x112?text=ThaiOmelet';" class="w-24 h-28 object-cover rounded-xl flex-shrink-0">
                         <div class="flex-grow space-y-1">
                             <h3 class="font-bold text-gray-800">ไข่เจียวฟูกรอบ</h3>
@@ -192,7 +196,7 @@
                     </div>
 
                     <!-- Card 9: ผัดซีอิ๊วหมูนุ่ม -->
-                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4">
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4 hover:shadow-md transition">
                         <img src="./assets/images/ThaiPadSeeEw.png" alt="ผัดซีอิ๊วหมูนุ่ม" onerror="this.src='https://via.placeholder.com/96x112?text=ThaiPadSeeEw';" class="w-24 h-28 object-cover rounded-xl flex-shrink-0">
                         <div class="flex-grow space-y-1">
                             <h3 class="font-bold text-gray-800">ผัดซีอิ๊วหมูนุ่ม</h3>
@@ -205,7 +209,7 @@
                     </div>
 
                     <!-- Card 10: แกงคั่วกุ้งสด -->
-                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4">
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex items-center gap-4 hover:shadow-md transition">
                         <img src="./assets/images/ThaiShrimpRedCurry.png" alt="แกงคั่วกุ้งสด" onerror="this.src='https://via.placeholder.com/96x112?text=ThaiShrimpRedCurry';" class="w-24 h-28 object-cover rounded-xl flex-shrink-0">
                         <div class="flex-grow space-y-1">
                             <h3 class="font-bold text-gray-800">แกงคั่วกุ้งสด</h3>
@@ -219,11 +223,12 @@
                 </div>
             </section>
 
-            <!-- Section 3: Promotion Banner -->
-            <section id="promotion" class="bg-gradient-to-r from-red-100 via-orange-50 to-red-100 p-6 rounded-2xl border border-red-200 text-center space-y-2 scroll-mt-20">
-                <h3 class="text-xl font-bold text-red-600">🎉 โปรโมชั่นพิเศษ! 🎉</h3>
-                <p class="text-lg font-semibold text-gray-800">เช็คอินร้านอาหาร ลดทันที 10% ทุกเมนู</p>
-                <p class="text-xs text-gray-500">ตั้งแต่วันนี้ - 31 ธันวาคม 2566</p>
+            <!-- Section 3: Promotion Banner (ใช้ไฟล์ภาพ promotion.jpg) -->
+            <section id="promotion" class="rounded-2xl overflow-hidden shadow-lg border border-red-200 scroll-mt-20">
+                <img src="./assets/images/promotion.jpg" 
+                     alt="โปรโมชั่นพิเศษ ลดทันที 10% ทุกเมนู" 
+                     onerror="this.src='https://via.placeholder.com/1200x500?text=Promotion+Banner';"
+                     class="w-full h-auto object-cover block">
             </section>
         </div>
     </main>
@@ -233,8 +238,9 @@
         <div class="max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 text-sm">
             <div class="space-y-2">
                 <div class="flex items-center gap-2">
-                    <div class="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center text-xs font-bold text-amber-800 overflow-hidden">
-                        <img src="./assets/images/logo.png" alt="โลโก้" onerror="this.src='https://via.placeholder.com/32?text=Logo';" class="w-full h-full object-cover">
+                    <!-- โลโก้ในส่วน Footer: logo.png -->
+                    <div class="w-8 h-8 bg-amber-100 rounded-full flex items-center justify-center text-xs font-bold text-amber-800 overflow-hidden border border-amber-300">
+                        <img src="./assets/images/logo.png" alt="โลโก้ร้าน" onerror="this.src='https://via.placeholder.com/32?text=Logo';" class="w-full h-full object-cover">
                     </div>
                     <h3 class="font-bold">ร้านอาหารของฉัน</h3>
                 </div>
